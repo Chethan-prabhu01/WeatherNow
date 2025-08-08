@@ -1,6 +1,6 @@
 /* scripts.js */
 const API_URL =
-  "http://api.weatherapi.com/v1/current.json?key=c9240f5c2f5e4e9c867143254251406&aqi=yes&q=";
+  "https://api.weatherapi.com/v1/current.json?key=c9240f5c2f5e4e9c867143254251406&aqi=yes&q=";
 
 const searchForm = document.getElementById("searchForm");
 const cityInput  = document.getElementById("cityInput");
