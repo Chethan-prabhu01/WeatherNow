@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Weather Now</h1>
+
+    <!-- Search -->
+    <form id="searchForm" class="search">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city or country"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+
+    <!-- Result -->
+    <section id="result" class="result hidden">
+      <h2 id="location"></h2>
+      <p id="date"></p>
+
+      <div class="weather-main">
+        <img id="icon" alt="" />
+        <p class="temp"><span id="temp"></span><sup>°C</sup></p>
+      </div>
+
+      <p id="condition" class="condition"></p>
+
+      <div class="details-grid">
+        <div><span id="feels"></span><small>°C<br/>Feels like</small></div>
+        <div><span id="humidity"></span><small>%<br/>Humidity</small></div>
+        <div><span id="wind"></span><small>km/h<br/>Wind</small></div>
+        <div><span id="uv"></span><small>UV<br/>Index</small></div>
+      </div>
+    </section>
+
+    <p id="error" class="error"></p>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
